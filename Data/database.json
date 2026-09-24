@@ -1,0 +1,86 @@
+{
+  "6684125544": {
+    "name": "💰Yaw Ne Bileyim Kimsem Kimim",
+    "age": 17,
+    "dob": "2008-11-07",
+    "height": 185,
+    "weight": 60.0,
+    "start_weight": 60.0,
+    "gender": "erkek",
+    "activity": "sedanter",
+    "goal": "powerbuild",
+    "bmr": 1676,
+    "tdee": 2011,
+    "injuries": "yok",
+    "measurements": "",
+    "ai_notes": "",
+    "food_allergies": "",
+    "level": 1,
+    "xp": 90,
+    "hp": 100,
+    "max_hp": 100,
+    "str": 10,
+    "sta": 10,
+    "gold": 0,
+    "streak": 0,
+    "last_date": "2026-09-21",
+    "daily": {
+      "water": 4750,
+      "kcal": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fats": 0,
+      "sets": 0,
+      "damage": 0,
+      "meals": [],
+      "workouts": []
+    },
+    "targets": {
+      "kcal": 2411,
+      "protein": 180,
+      "carbs": 271,
+      "fats": 66,
+      "water": 3000
+    },
+    "boss_hp": 50000,
+    "boss_max_hp": 50000,
+    "boss_level": 1,
+    "boss_name": "Goblin",
+    "total_damage_all": 0,
+    "total_sets_all": 0,
+    "exercise_stats": {},
+    "action_logs": [
+      {
+        "timestamp": "2026-09-21 22:38:23",
+        "type": "water",
+        "details": "1000ml su içti"
+      },
+      {
+        "timestamp": "2026-09-21 22:38:29",
+        "type": "water",
+        "details": "1000ml su içti"
+      },
+      {
+        "timestamp": "2026-09-21 22:38:30",
+        "type": "water",
+        "details": "500ml su içti"
+      },
+      {
+        "timestamp": "2026-09-21 22:38:31",
+        "type": "water",
+        "details": "250ml su içti"
+      },
+      {
+        "timestamp": "2026-09-21 22:38:35",
+        "type": "water",
+        "details": "1000ml su içti"
+      },
+      {
+        "timestamp": "2026-09-21 22:38:39",
+        "type": "water",
+        "details": "1000ml su içti"
+      }
+    ],
+    "history": {}
+  }
+}

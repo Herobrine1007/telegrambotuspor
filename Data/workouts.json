@@ -1,0 +1,423 @@
+{
+    "EXERCISES": {
+        "push": {
+            "name": "💪 İtiş (Göğüs/Omuz/Triceps)",
+            "moves": {
+                "bench": "Bench Press",
+                "incline_db": "Incline DB Press",
+                "ohp": "Overhead Press",
+                "dips": "Dips",
+                "cable_fly": "Cable Fly",
+                "lateral": "Lateral Raise",
+                "triceps_pd": "Triceps Pushdown",
+                "skull_crusher": "Skull Crusher"
+            }
+        },
+        "pull": {
+            "name": "🦾 Çekiş (Sırt/Biceps)",
+            "moves": {
+                "deadlift": "Deadlift",
+                "barbell_row": "Barbell Row",
+                "lat_pull": "Lat Pulldown",
+                "cable_row": "Cable Row",
+                "face_pull": "Face Pull",
+                "curl": "Biceps Curl",
+                "hammer": "Hammer Curl",
+                "pullup": "Pull-up"
+            }
+        },
+        "legs": {
+            "name": "🦵 Bacak",
+            "moves": {
+                "squat": "Squat",
+                "leg_press": "Leg Press",
+                "lunges": "Lunges",
+                "rdl": "Romanian Deadlift",
+                "leg_curl": "Leg Curl",
+                "leg_ext": "Leg Extension",
+                "calf": "Calf Raise",
+                "hip_thrust": "Hip Thrust"
+            }
+        },
+        "cardio": {
+            "name": "🏃 Kardiyo",
+            "moves": {
+                "run_20": "20 dk Koşu",
+                "run_30": "30 dk Koşu",
+                "walk_30": "30 dk Yürüyüş",
+                "walk_60": "60 dk Yürüyüş",
+                "bike_30": "30 dk Bisiklet",
+                "jump_rope": "15 dk İp Atlama",
+                "hiit_20": "20 dk HIIT"
+            }
+        }
+    },
+    "WORKOUT_PROGRAMS": {
+        "kilo_ver": {
+            "title": "🔥 Yağ Yakma Programı",
+            "days": {
+                "Pazartesi": {
+                    "zone": "push",
+                    "moves": [
+                        "bench",
+                        "ohp",
+                        "lateral",
+                        "triceps_pd"
+                    ],
+                    "sets": 3,
+                    "reps": "12-15",
+                    "rest": "45-60 sn"
+                },
+                "Salı": {
+                    "zone": "cardio",
+                    "moves": [
+                        "run_30",
+                        "jump_rope"
+                    ]
+                },
+                "Çarşamba": {
+                    "zone": "pull",
+                    "moves": [
+                        "barbell_row",
+                        "lat_pull",
+                        "face_pull",
+                        "curl"
+                    ],
+                    "sets": 3,
+                    "reps": "12-15",
+                    "rest": "45-60 sn"
+                },
+                "Perşembe": {
+                    "zone": "cardio",
+                    "moves": [
+                        "walk_60",
+                        "bike_30"
+                    ]
+                },
+                "Cuma": {
+                    "zone": "legs",
+                    "moves": [
+                        "squat",
+                        "lunges",
+                        "leg_curl",
+                        "calf"
+                    ],
+                    "sets": 3,
+                    "reps": "12-15",
+                    "rest": "45-60 sn"
+                },
+                "Cumartesi": {
+                    "zone": "cardio",
+                    "moves": [
+                        "run_20",
+                        "walk_30"
+                    ]
+                },
+                "Pazar": {
+                    "zone": null,
+                    "note": "🛌 Dinlenme"
+                }
+            }
+        },
+        "kas_kazan": {
+            "title": "💪 Kas Kazanma (Bulk) Programı",
+            "days": {
+                "Pazartesi": {
+                    "zone": "push",
+                    "moves": [
+                        "bench",
+                        "incline_db",
+                        "ohp",
+                        "dips",
+                        "lateral"
+                    ],
+                    "sets": 4,
+                    "reps": "6-8",
+                    "rest": "90-120 sn"
+                },
+                "Salı": {
+                    "zone": "pull",
+                    "moves": [
+                        "deadlift",
+                        "barbell_row",
+                        "lat_pull",
+                        "cable_row",
+                        "curl"
+                    ],
+                    "sets": 4,
+                    "reps": "6-8",
+                    "rest": "90-120 sn"
+                },
+                "Çarşamba": {
+                    "zone": null,
+                    "note": "🛌 Dinlenme"
+                },
+                "Perşembe": {
+                    "zone": "legs",
+                    "moves": [
+                        "squat",
+                        "leg_press",
+                        "rdl",
+                        "leg_ext",
+                        "leg_curl",
+                        "calf"
+                    ],
+                    "sets": 4,
+                    "reps": "6-10",
+                    "rest": "90-120 sn"
+                },
+                "Cuma": {
+                    "zone": "push",
+                    "moves": [
+                        "ohp",
+                        "incline_db",
+                        "cable_fly",
+                        "lateral",
+                        "triceps_pd"
+                    ],
+                    "sets": 4,
+                    "reps": "8-10",
+                    "rest": "60-90 sn"
+                },
+                "Cumartesi": {
+                    "zone": "pull",
+                    "moves": [
+                        "barbell_row",
+                        "lat_pull",
+                        "face_pull",
+                        "hammer",
+                        "curl"
+                    ],
+                    "sets": 4,
+                    "reps": "8-10",
+                    "rest": "60-90 sn"
+                },
+                "Pazar": {
+                    "zone": null,
+                    "note": "🛌 Dinlenme"
+                }
+            }
+        },
+        "koruma": {
+            "title": "⚖️ Koruma Programı",
+            "days": {
+                "Pazartesi": {
+                    "zone": "push",
+                    "moves": [
+                        "bench",
+                        "ohp",
+                        "lateral",
+                        "triceps_pd"
+                    ],
+                    "sets": 3,
+                    "reps": "8-12",
+                    "rest": "60-90 sn"
+                },
+                "Salı": {
+                    "zone": "pull",
+                    "moves": [
+                        "barbell_row",
+                        "lat_pull",
+                        "face_pull",
+                        "curl"
+                    ],
+                    "sets": 3,
+                    "reps": "8-12",
+                    "rest": "60-90 sn"
+                },
+                "Çarşamba": {
+                    "zone": "cardio",
+                    "moves": [
+                        "walk_30"
+                    ]
+                },
+                "Perşembe": {
+                    "zone": "legs",
+                    "moves": [
+                        "squat",
+                        "rdl",
+                        "leg_ext",
+                        "leg_curl",
+                        "calf"
+                    ],
+                    "sets": 3,
+                    "reps": "8-12",
+                    "rest": "60-90 sn"
+                },
+                "Cuma": {
+                    "zone": "push",
+                    "moves": [
+                        "incline_db",
+                        "cable_fly",
+                        "ohp",
+                        "dips"
+                    ],
+                    "sets": 3,
+                    "reps": "10-12",
+                    "rest": "60-90 sn"
+                },
+                "Cumartesi": {
+                    "zone": "cardio",
+                    "moves": [
+                        "run_20",
+                        "walk_30"
+                    ]
+                },
+                "Pazar": {
+                    "zone": null,
+                    "note": "🛌 Dinlenme"
+                }
+            }
+        },
+        "recomp": {
+            "title": "🔥 Yağ Yak & 💪 Kas Yap (Recomp)",
+            "days": {
+                "Pazartesi": {
+                    "zone": "push",
+                    "moves": [
+                        "bench",
+                        "ohp",
+                        "lateral",
+                        "triceps_pd"
+                    ],
+                    "sets": 3,
+                    "reps": "8-12",
+                    "rest": "60-90 sn"
+                },
+                "Salı": {
+                    "zone": "pull",
+                    "moves": [
+                        "barbell_row",
+                        "lat_pull",
+                        "face_pull",
+                        "curl"
+                    ],
+                    "sets": 3,
+                    "reps": "8-12",
+                    "rest": "60-90 sn"
+                },
+                "Çarşamba": {
+                    "zone": "cardio",
+                    "moves": [
+                        "walk_30"
+                    ]
+                },
+                "Perşembe": {
+                    "zone": "legs",
+                    "moves": [
+                        "squat",
+                        "rdl",
+                        "leg_ext",
+                        "leg_curl",
+                        "calf"
+                    ],
+                    "sets": 3,
+                    "reps": "8-12",
+                    "rest": "60-90 sn"
+                },
+                "Cuma": {
+                    "zone": "push",
+                    "moves": [
+                        "incline_db",
+                        "cable_fly",
+                        "ohp",
+                        "dips"
+                    ],
+                    "sets": 3,
+                    "reps": "10-12",
+                    "rest": "60-90 sn"
+                },
+                "Cumartesi": {
+                    "zone": "cardio",
+                    "moves": [
+                        "run_20",
+                        "walk_30"
+                    ]
+                },
+                "Pazar": {
+                    "zone": null,
+                    "note": "🛌 Dinlenme"
+                }
+            }
+        },
+        "powerbuild": {
+            "title": "🏋️ Kilo Al & Güçlen (Powerbuilding)",
+            "days": {
+                "Pazartesi": {
+                    "zone": "push",
+                    "moves": [
+                        "bench",
+                        "incline_db",
+                        "ohp",
+                        "dips",
+                        "lateral"
+                    ],
+                    "sets": 4,
+                    "reps": "6-8",
+                    "rest": "90-120 sn"
+                },
+                "Salı": {
+                    "zone": "pull",
+                    "moves": [
+                        "deadlift",
+                        "barbell_row",
+                        "lat_pull",
+                        "cable_row",
+                        "curl"
+                    ],
+                    "sets": 4,
+                    "reps": "6-8",
+                    "rest": "90-120 sn"
+                },
+                "Çarşamba": {
+                    "zone": null,
+                    "note": "🛌 Dinlenme"
+                },
+                "Perşembe": {
+                    "zone": "legs",
+                    "moves": [
+                        "squat",
+                        "leg_press",
+                        "rdl",
+                        "leg_ext",
+                        "leg_curl",
+                        "calf"
+                    ],
+                    "sets": 4,
+                    "reps": "6-10",
+                    "rest": "90-120 sn"
+                },
+                "Cuma": {
+                    "zone": "push",
+                    "moves": [
+                        "ohp",
+                        "incline_db",
+                        "cable_fly",
+                        "lateral",
+                        "triceps_pd"
+                    ],
+                    "sets": 4,
+                    "reps": "8-10",
+                    "rest": "60-90 sn"
+                },
+                "Cumartesi": {
+                    "zone": "pull",
+                    "moves": [
+                        "barbell_row",
+                        "lat_pull",
+                        "face_pull",
+                        "hammer",
+                        "curl"
+                    ],
+                    "sets": 4,
+                    "reps": "8-10",
+                    "rest": "60-90 sn"
+                },
+                "Pazar": {
+                    "zone": null,
+                    "note": "🛌 Dinlenme"
+                }
+            }
+        }
+    }
+}
