@@ -1,4 +1,24 @@
 ﻿# -*- coding: utf-8 -*-
+import importlib.util
+import os
+import subprocess
+import sys
+
+if importlib.util.find_spec('telebot') is None:
+    dependencies_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '.deps')
+    os.makedirs(dependencies_dir, exist_ok=True)
+    subprocess.check_call([
+        sys.executable,
+        '-m',
+        'pip',
+        'install',
+        '--target',
+        dependencies_dir,
+        '-r',
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), 'requirements.txt'),
+    ])
+    sys.path.insert(0, dependencies_dir)
+
 import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 import json
