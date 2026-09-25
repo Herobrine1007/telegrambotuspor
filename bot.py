@@ -29,14 +29,16 @@ from datetime import datetime, date, timedelta
 from difflib import SequenceMatcher
 import google.generativeai as genai
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 TOKEN = os.environ['TELEGRAM_BOT_TOKEN']
 GEMINI_API_KEY = os.environ['GEMINI_API_KEY']
 
 bot = telebot.TeleBot(TOKEN)
 genai.configure(api_key=GEMINI_API_KEY)
 
-DB_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), '../Data/database.json')
-FOODS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), '../Data/foods.json')
+DB_FILE = os.path.join(BASE_DIR, 'Data', 'database.json')
+FOODS_FILE = os.path.join(BASE_DIR, 'Data', 'foods.json')
 
 def load_foods():
     try:
@@ -49,7 +51,7 @@ def load_foods():
 
 def load_workouts():
     try:
-        with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '../Data/workouts.json'), 'r', encoding='utf-8') as f:
+        with open(os.path.join(BASE_DIR, 'Data', 'workouts.json'), 'r', encoding='utf-8') as f:
             d = json.load(f)
             return d.get('EXERCISES', {}), d.get('WORKOUT_PROGRAMS', {})
     except Exception as e:
