@@ -17,7 +17,7 @@ if not exist "%PYTHON%" (
 )
 
 echo.
-cd /d "%~dp0\Bot"
+cd /d "%~dp0"
 
 :loop
 echo Bot calistiriliyor... (Kapatmak icin bu pencereyi kapatin)
